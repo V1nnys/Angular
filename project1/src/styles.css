@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-bottom: 500px;
+    height: 1000px;
+}
+
+.class{
+    border-bottom: 1px solid red;
+    padding: 2em;
+    margin-bottom: 1em;
+}
