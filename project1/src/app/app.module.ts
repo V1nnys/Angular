@@ -10,6 +10,8 @@ import { ParentDataComponent } from './components/parent-data/parent-data.compon
 import { EventosComponent } from './components/eventos/eventos.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { ChangeNumberComponent } from './components/change-number/change-number.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
     ParentDataComponent,
     EventosComponent,
     EmitterComponent,
-    ChangeNumberComponent
+    ChangeNumberComponent,
+    ListRenderComponent,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
