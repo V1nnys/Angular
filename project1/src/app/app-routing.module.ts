@@ -5,12 +5,17 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { EventosComponent } from './components/eventos/eventos.component';
 import { EmitterComponent } from './components/emitter/emitter.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 const routes: Routes = [
   {path: 'list', component: ListRenderComponent},
   {path: 'event', component: EventosComponent},
   {path: 'emitter', component: EmitterComponent},
-  {path: 'pipes', component: PipesComponent}
+  {path: 'pipes', component: PipesComponent},
+  {path: 'two-way', component: TwoWayBindingComponent},
+
+  {path: 'list/:id', component: ItemDetailComponent}
 
 ];
 
