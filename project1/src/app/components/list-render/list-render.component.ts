@@ -24,8 +24,8 @@ export class ListRenderComponent {
   }
 
   removeAnimal(animal: Animal) {
-    console.log('Removendo animal...');
-    this.animals = this.listService.remove(this.animals, animal); 
+    this.animals = this.animals.filter((a) => animal.name !== a.name);
+    this.listService.remove(animal.id).subscribe(); //comando substituído para que a exclusão seja atravéz do 'service'.
   }
 
   getAnimals(): void {
