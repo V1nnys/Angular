@@ -10,23 +10,22 @@ import { Component, OnInit, DoCheck,
   AfterContentChecked,
   AfterViewInit,
   AfterViewChecked
+
+<app-title *ngIf="destruir"></app-title>
+    {{valor}}
+    <button (click)="adicionar()">Adicionar</button>
+    <button (click)="destruirComponent()">Destruir componente</button>
 */
 
 @Component({
   selector: 'app-root',
   template: `
-    <app-title *ngIf="destruir"></app-title>
-    {{valor}}
-    <button (click)="adicionar()">Adicionar</button>
-    <button (click)="destruirComponent()">Destruir componente</button>
+    <app-data-binding></app-data-binding>
     <router-outlet></router-outlet>,
   `
+
 })
-export class AppComponent implements OnInit, DoCheck,
-AfterContentInit,
-AfterContentChecked,
-AfterViewInit,
-AfterViewChecked{
+export class AppComponent implements OnInit {
 
   public valor: number = 1;
   
