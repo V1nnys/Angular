@@ -15,13 +15,15 @@ import { Component, OnInit, DoCheck,
     {{valor}}
     <button (click)="adicionar()">Adicionar</button>
     <button (click)="destruirComponent()">Destruir componente</button>
-*/
-
-@Component({
-  selector: 'app-root',
-  template: `
+    
+    */
+   
+   @Component({
+     selector: 'app-root',
+     template: `
     <app-data-binding></app-data-binding>
-    <router-outlet></router-outlet>,
+    <app-diretivas-estruturais></app-diretivas-estruturais>
+    <router-outlet></router-outlet>
   `
 
 })
