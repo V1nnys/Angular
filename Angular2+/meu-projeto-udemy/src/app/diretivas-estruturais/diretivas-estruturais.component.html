@@ -17,3 +17,31 @@
 </p>
 
 <button (click)="onClick()">Clicar</button>
+
+<hr>
+
+<ul>
+    <li *ngFor="let item of list; let i = index;" (click)="onCLickEventList(i)">
+        [ {{i}} ] - {{item.nome}} - idade = {{item.idade}}
+    </li>
+</ul>
+
+<button (click)="onClickAddList()">Add</button>
+
+<hr>
+
+<input type="text" [(ngModel)]="nome">
+
+<div [ngSwitch]="nome">
+    <p *ngSwitchCase="'dener'">
+        Dener
+    </p>
+
+    <p *ngSwitchCase="'nay'">
+        Nay
+    </p>
+
+    <p *ngSwitchDefault>
+        Deu ruim sua Busca!
+    </p>
+</div>
