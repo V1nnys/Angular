@@ -15,6 +15,11 @@ import { Component, OnInit, DoCheck,
     {{valor}}
     <button (click)="adicionar()">Adicionar</button>
     <button (click)="destruirComponent()">Destruir componente</button>
+
+    <app-diretivas-estruturais></app-diretivas-estruturais>
+
+    <app-diretivas-atributos></app-diretivas-atributos>
+    <router-outlet></router-outlet>
     
     */
    
@@ -23,6 +28,7 @@ import { Component, OnInit, DoCheck,
      template: `
     <app-data-binding></app-data-binding>
     <app-diretivas-estruturais></app-diretivas-estruturais>
+    <app-diretivas-atributos></app-diretivas-atributos>
     <router-outlet></router-outlet>
   `
 
