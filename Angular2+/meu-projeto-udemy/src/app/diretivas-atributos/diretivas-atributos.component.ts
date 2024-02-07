@@ -11,6 +11,9 @@ export class DiretivasAtributosComponent {
   public heightPx: string = "20px";
   public backgroundColor: string = "green";
 
+  public nome: string = "";
+  public list: Array<{nome: string}> = [{nome: "Vinicius Silva"}];
+
   ngOnInit(): void {
 
     setInterval( ()=>{
@@ -21,7 +24,7 @@ export class DiretivasAtributosComponent {
       }
 
       if(this.heightPx == "20px"){
-        this.heightPx = "50px";
+        this.heightPx = "30px";
         this.backgroundColor = "blue"
       } else {
         this.heightPx = "20px";
@@ -31,4 +34,10 @@ export class DiretivasAtributosComponent {
 
   }
 
+  public salvar() {
+    this.list.push({ nome: this.nome });
+    this.nome = "";
+  }
 }
+
+
